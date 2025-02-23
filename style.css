@@ -1,0 +1,171 @@
+h1.title {
+    text-align: center;
+    color: crimson;
+    padding: 2em;
+    border-bottom: dashed gray 2px;
+}
+.box1, .box2, .box3 {
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    padding: 2em;
+    border: solid 1px gray;
+    margin: 3em auto;
+}
+.box1 {
+    box-shadow: -10px 10px 15px orangered; 
+    border-radius: 20px;
+}
+.box2 {
+    box-shadow: -10px 10px 15px orangered inset;
+    border-radius: 50%;
+}
+.box3 {
+    box-shadow: 0px 0px 15px 5px orangered;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.header {
+    width: 1000px;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 1em;
+    text-align: center;
+}
+.navlinks {
+    width: 1000px;
+    padding: 1em;
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+    background-color: darkblue;
+}
+.maincontainer {
+    width: 1000px;
+    height: 500px;
+    margin: 2em auto;
+    box-shadow: 5px 5px 10px gray;
+}
+.leftblock {
+    width: 700px;
+    height: 300px;
+    border: solid gray 1px;
+    float: left;
+}
+.rightblock {
+    width: 295px;
+    height: 300px;
+    border: 1px solid black;
+    float: right;
+}
+.infosection {
+    height: 150px;
+    background-color: chartreuse;
+}
+.newsarticle {
+    height: 150px;
+    background-color: deepskyblue;
+}
+.images {
+    height: 200px;
+    background-color: crimson;
+    float: left;
+    width: 100%;
+}
+.footer {
+    width: 1000px;
+    margin: auto;
+    height: 100px;
+    background-color: lightgray;
+}
+.liquidheader, .liquidnav, .liquidcontainer, .liquidfooter {
+    width: 80%;
+}
+.liquidleftblock {
+    width: 70%;
+}
+.liquidrightblock {
+    width: 29%;
+}
+.cardcontainer {
+    width: 90%;
+    height: 750px;
+    margin: 2em auto;
+}
+.card {
+    width: 40%;
+    height: auto;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 12px;
+    margin: 0% 5%;
+    overflow: hidden;
+    float: left;
+}
+img {
+    width: 100%;
+    display: block;
+}
+.card img {
+    height: 80%;
+}
+.card h3 {
+    text-align: center;
+}
+.card h3 a {
+    color: olive;
+}
+.card:hover {
+    box-shadow: 0px 0px 10px 1px black;
+    cursor: pointer;
+}
+.card:hover .cardlink {
+    color: crimson;
+    font-size: 1.1em;
+}
+.cardinfo {
+    padding: 1.5em;
+    font-size: 1.1em;
+    text-align: justify;
+}
+.cardfooterlink {
+    text-align: center;
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 1em;
+}
+.card:hover .cardfooterlink {
+    background-color: crimson;
+    font-size: 1.1em;
+}
+.verticaltabs {
+    list-style: none;
+}
+.verticaltabs li a {
+    display: block;
+    background-color: blueviolet;
+    width: 30%;
+    color: whitesmoke;
+    padding: 1em;
+    text-decoration: none;
+}
+.verticaltabs li a:hover {
+    background-color: aqua;
+    color: darkblue;
+}
+.horizontaltabs {
+    background-color: blueviolet;
+}
+.horizontaltabs a {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    color: whitesmoke;
+    padding: 1em;
+    text-decoration: none;
+}
+.horizontaltabs a:hover {
+    background-color: aqua;
+    color: darkblue;
+}
