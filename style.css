@@ -103,11 +103,11 @@ h1.title {
     float: left;
 }
 img {
-    width: 80%;
+    width: 60%;
     display: block;
 }
 .card img {
-    height: 60%;
+    height: 50%;
 }
 .card h3 {
     text-align: center;
