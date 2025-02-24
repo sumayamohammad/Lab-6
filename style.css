@@ -1,20 +1,26 @@
-
-h1.title, .box1, .box2, .box3, h2, .header, .navlinks, .footer {
-    display: none;
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-/* Card Container: Ensures cards are aligned properly */
-.cardcontainer {
+/* --- CARD STYLING --- */
+
+/* Cards Wrapper */
+.cards-wrapper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5em;
+    flex-wrap: wrap;
+    gap: 2em;
     padding: 2em;
 }
 
-
+/* Card Box */
 .card {
-    background-color: #fff;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -22,14 +28,14 @@ h1.title, .box1, .box2, .box3, h2, .header, .navlinks, .footer {
     text-align: center;
     transition: transform 0.3s ease-in-out;
     padding: 1em;
-    border: 1px solid #ddd; /* Subtle border */
+    border: 1px solid #ddd;
 }
 
 .card:hover {
     transform: scale(1.05);
 }
 
-
+/* Image inside Card */
 .card img {
     width: 100%;
     height: 200px;
@@ -37,85 +43,85 @@ h1.title, .box1, .box2, .box3, h2, .header, .navlinks, .footer {
     border-radius: 10px;
 }
 
-/* Card Title & Links */
-.card h3 {
-    margin-top: 1em;
-    font-size: 1.3em;
+/* Card Content */
+.card-content {
+    padding: 1em;
 }
 
-.cardlink {
+/* Card Title & Links */
+.card h3 {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+}
+
+.card-link {
     text-decoration: none;
     color: blueviolet;
     font-weight: bold;
 }
 
-.cardlink:hover {
+.card-link:hover {
     color: darkblue;
 }
 
 /* Card Description */
-.cardinfo {
+.card-info {
     font-size: 0.9em;
     color: #555;
     padding: 0.5em;
 }
 
-/* Footer Link */
-.cardfooterlink {
-    display: inline-block;
-    margin-top: 1em;
-    color: blueviolet;
-    font-weight: bold;
-    text-decoration: none;
-}
+/* --- NAVIGATION STYLING --- */
 
-.cardfooterlink:hover {
-    color: darkblue;
-}
-
-/* Navigation Tabs */
-.verticaltabs {
+/* Vertical Tabs */
+.vertical-tabs {
     list-style: none;
     padding: 0;
+    margin: 2em auto;
+    width: 200px;
 }
 
-.verticaltabs li a {
+.vertical-tabs li a {
     display: block;
     background-color: blueviolet;
-    width: 30%;
     color: whitesmoke;
     padding: 1em;
     text-decoration: none;
     margin-bottom: 5px;
+    border-radius: 5px;
 }
 
-.verticaltabs li a:hover {
+.vertical-tabs li a:hover {
     background-color: aqua;
     color: darkblue;
 }
 
-.horizontaltabs {
+/* Horizontal Tabs */
+.horizontal-tabs {
     background-color: blueviolet;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2em;
     padding: 1em;
 }
 
-.horizontaltabs a {
+.horizontal-tabs a {
     color: whitesmoke;
     text-decoration: none;
-    padding: 1em;
+    font-size: 1.1em;
+    padding: 0.8em;
+    border-radius: 5px;
 }
 
-.horizontaltabs a:hover {
+.horizontal-tabs a:hover {
     background-color: aqua;
     color: darkblue;
 }
 
-/* Footer */
+/* --- FOOTER --- */
+
 .footer {
-    text-align: center;
-    margin-top: 2em;
-    padding: 1em;
     background-color: #f4f4f4;
+    padding: 1em;
+    margin-top: 2em;
 }
