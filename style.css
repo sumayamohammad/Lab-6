@@ -1,51 +1,52 @@
-/* Hide unnecessary elements */
+
 h1.title, .box1, .box2, .box3, h2, .header, .navlinks, .footer {
     display: none;
 }
 
-/* Card Container */
+/* Card Container: Ensures cards are aligned properly */
 .cardcontainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
     justify-content: center;
-    margin: 2em auto;
-    padding: 1em;
+    gap: 1.5em;
+    padding: 2em;
 }
 
-/* Card Styling */
+
 .card {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    width: 280px;
+    width: 300px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
     padding: 1em;
+    border: 1px solid #ddd; /* Subtle border */
 }
 
 .card:hover {
     transform: scale(1.05);
 }
 
-/* Image Styling */
+
 .card img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
-/* Card Title Links */
+/* Card Title & Links */
 .card h3 {
     margin-top: 1em;
+    font-size: 1.3em;
 }
 
 .cardlink {
     text-decoration: none;
     color: blueviolet;
     font-weight: bold;
-    font-size: 1.2em;
 }
 
 .cardlink:hover {
