@@ -1,41 +1,120 @@
-.card-container {
+/* Hide unnecessary elements */
+h1.title, .box1, .box2, .box3, h2, .header, .navlinks, .footer {
+    display: none;
+}
+
+/* Card Container */
+.cardcontainer {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
     justify-content: center;
+    margin: 2em auto;
+    padding: 1em;
 }
 
+/* Card Styling */
 .card {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    width: 250px;
+    width: 280px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
+    padding: 1em;
 }
 
 .card:hover {
     transform: scale(1.05);
 }
 
+/* Image Styling */
 .card img {
     width: 100%;
     height: auto;
-    border-bottom: 2px solid blueviolet;
+    border-radius: 10px;
 }
 
-.card-content {
+/* Card Title Links */
+.card h3 {
+    margin-top: 1em;
+}
+
+.cardlink {
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.cardlink:hover {
+    color: darkblue;
+}
+
+/* Card Description */
+.cardinfo {
+    font-size: 0.9em;
+    color: #555;
+    padding: 0.5em;
+}
+
+/* Footer Link */
+.cardfooterlink {
+    display: inline-block;
+    margin-top: 1em;
+    color: blueviolet;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cardfooterlink:hover {
+    color: darkblue;
+}
+
+/* Navigation Tabs */
+.verticaltabs {
+    list-style: none;
+    padding: 0;
+}
+
+.verticaltabs li a {
+    display: block;
+    background-color: blueviolet;
+    width: 30%;
+    color: whitesmoke;
+    padding: 1em;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.verticaltabs li a:hover {
+    background-color: aqua;
+    color: darkblue;
+}
+
+.horizontaltabs {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-evenly;
     padding: 1em;
 }
 
-.card-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: blueviolet;
+.horizontaltabs a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 1em;
 }
 
-.card-description {
-    font-size: 0.9em;
-    color: #555;
+.horizontaltabs a:hover {
+    background-color: aqua;
+    color: darkblue;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #f4f4f4;
 }
