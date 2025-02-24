@@ -1,38 +1,41 @@
-h1.title, .box1, .box2, .box3, h2, .header, .navlinks, .footer {
-    display: none;
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
 }
 
-.verticaltabs {
-    list-style: none;
-}
-.verticaltabs li a {
-    display: block;
-    background-color: blueviolet;
-    width: 30%;
-    color: whitesmoke;
-    padding: 1em;
-    text-decoration: none;
-}
-.verticaltabs li a:hover {
-    background-color: aqua;
-    color: darkblue;
-}
-.horizontaltabs {
-    background-color: blueviolet;
-}
-.horizontaltabs a {
-    display: inline-block;
-    width: 33%;
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 250px;
     text-align: center;
-    color: whitesmoke;
-    padding: 1em;
-    text-decoration: none;
-}
-.horizontaltabs a:hover {
-    background-color: aqua;
-    color: darkblue;
+    transition: transform 0.3s ease-in-out;
 }
 
-.footer {
-    text-align: center;
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid blueviolet;
+}
+
+.card-content {
+    padding: 1em;
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.card-description {
+    font-size: 0.9em;
+    color: #555;
 }
