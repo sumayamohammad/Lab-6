@@ -3,62 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 6, layout and navigation</title>
+    <title>Lab 6 - Layout and Navigation</title>
     <link rel="stylesheet" href="lab6style.css">
 </head>
 <body>
-    <main class="cardcontainer">
-        <section class="card">
-            <img src="https://github.com/sumayamohammad/Lab-6/blob/main/Images/NYC.jpg?raw=true" alt="image of NYC">
-            <h3><a href="" class="cardlink">New York City</a></h3>
-        </section>
 
-        <section class="card">
-            <img src="https://github.com/sumayamohammad/Lab-6/blob/main/Images/LA.jpg?raw=true" alt="image of LA">
-            <h3><a href="" class="cardlink">Los Angeles</a></h3>
-        </section>
-    </main>
+    <!-- Main Section: Cards Grid -->
+    <section class="cards-wrapper">
+        <div class="card">
+            <img src="https://github.com/sumayamohammad/Lab-6/blob/main/Images/NYC.jpg?raw=true" alt="New York City">
+            <div class="card-content">
+                <h3><a href="#" class="card-link">New York City</a></h3>
+                <p class="card-info">New York City is the most populous city in the United States, located at the southern tip of New York State.</p>
+            </div>
+        </div>
 
-    <main class="cardcontainer">
-        <section class="card">
-            <h3><a href="" class="cardlink">New York City</a></h3>
-            <img src="https://github.com/sumayamohammad/Lab-6/blob/main/Images/NYC.jpg?raw=true" alt="image of NYC">
-            <p class="cardinfo">New York, often called New York City
-            or NYC, is the most populous city in the United States, 
-            located at the southern tip of New York State on one of the 
-            world's largest natural harbors. The city comprises five boroughs, 
-            each coextensive with a respective county. </p>
-        </section>
+        <div class="card">
+            <img src="https://github.com/sumayamohammad/Lab-6/blob/main/Images/LA.jpg?raw=true" alt="Los Angeles">
+            <div class="card-content">
+                <h3><a href="#" class="card-link">Los Angeles</a></h3>
+                <p class="card-info">Los Angeles is a sprawling Southern California city and the center of the nation’s film and television industry.</p>
+            </div>
+        </div>
+    </section>
 
-        <section class="card">
-            <img src="https://github.com/sumayamohammad/Lab-6/blob/main/Images/LA.jpg?raw=true" alt="image of LA">
-            <h3>Los Angeles</h3>
-            <p class="cardinfo">New York, often called New York City
-            or NYC, is the most populous city in the United States, 
-            located at the southern tip of New York State on one of the 
-            world's largest natural harbors. The city comprises five boroughs, 
-            each coextensive with a respective county.</p>
-            <a href="" class="cardfooterlink">More info about LA</a>
-        </section>
-    </main>
+    <!-- Navigation Section -->
+    <section class="navigation">
+        <h2>Navigation Tabs</h2>
 
-    <h2>Navigation tabs</h2>
-    <h3>Vertical navigation tabs</h3>
-    <ul class="verticaltabs">
-        <li><a href="https://www.cuny.edu/">CUNY</a></li>
-        <li><a href="https://www.qcc.cuny.edu/">QCC</a></li>
-        <li><a href="https://www.qc.cuny.edu/">Queens College</a></li>
-    </ul>
+        <h3>Vertical Navigation</h3>
+        <ul class="vertical-tabs">
+            <li><a href="https://www.cuny.edu/">CUNY</a></li>
+            <li><a href="https://www.qcc.cuny.edu/">QCC</a></li>
+            <li><a href="https://www.qc.cuny.edu/">Queens College</a></li>
+        </ul>
 
-    <h3>Horizontal tabs</h3>
-    <nav class="horizontaltabs">
-        <a href="https://www.cuny.edu/">CUNY</a>
-        <a href="https://www.qcc.cuny.edu/">QCC</a>
-        <a href="https://www.qc.cuny.edu/">Queens College</a>
-    </nav>
-    
+        <h3>Horizontal Navigation</h3>
+        <nav class="horizontal-tabs">
+            <a href="https://www.cuny.edu/">CUNY</a>
+            <a href="https://www.qcc.cuny.edu/">QCC</a>
+            <a href="https://www.qc.cuny.edu/">Queens College</a>
+        </nav>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-        By Sumaya Mohammad
+        <p>By Sumaya Mohammad</p>
     </footer>
+
 </body>
 </html>
